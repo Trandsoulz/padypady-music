@@ -6,7 +6,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Pdaypady Music</title>
+  <title>Padypady Music</title>
+
+  
 
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css" />
@@ -18,6 +20,10 @@
   <link rel="stylesheet" href="owl-carousel/dist/assets/owl.theme.default.min.css">
   <link rel="stylesheet" href="owl-carousel/dist/assets/owl.carousel.min.css">
 
+   <!-- Flickity Carousel -->
+   <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet" />
+
+  
 </head>
 
 <body data-spy="scroll">
@@ -93,21 +99,40 @@
       <div class="content-top text-center">
         <h2>Listening<span style="color: #155b15;"> is</span><br> <span class="colorful-text">Everything</span></h2>
       </div>
-      <div class="row">
-        <div class="col-sm-12 col-md-12 col-lg-4">
-          <div class="benefits-inner">
+      <div class="main-carousel" data-flickity='{ "autoPlay": true, "cellAlign": "left", "contain": true, "prevNextButtons": false }'>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class=" carousel-cell benefits-inner">
           
             <h3>Most Played</h3>
             <img src="images/new_born_fela.jpeg" width="100%" height="100%">         </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-4">
-          <div class="benefits-inner">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class=" carousel-cell benefits-inner">
             <h3>Most Rated</h3>
             <img src="images/TI_blaze.png" width="100%" height="100%">
           </div>
         </div>
-        <div class="col-sm-12 col-md-12 col-lg-4">
-          <div class="benefits-inner m-0">
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class=" carousel-cell benefits-inner">
+            <h3>Elevates mood</h3>
+            <img src="images/compromise.jpeg" width="100%" height="100%">
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class=" carousel-cell benefits-inner">
+          
+            <h3>Most Played</h3>
+            <img src="images/new_born_fela.jpeg" width="100%" height="100%">         </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class=" carousel-cell benefits-inner">
+            <h3>Most Rated</h3>
+            <img src="images/TI_blaze.png" width="100%" height="100%">
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4">
+          <div class=" carousel-cell benefits-inner">
             <h3>Elevates mood</h3>
             <img src="images/compromise.jpeg" width="100%" height="100%">
           </div>
@@ -344,11 +369,29 @@
 
 
   <!-- Javascript -->
+  
+  
   <script src="js/jquery.min.js"></script>
   <script src="owl-carousel/dist/owl.carousel.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/custom.js"></script>
   <script src="js/font-awesome-5.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  
+  <!-- <script>
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity( elem, {
+      // options
+      cellAlign: 'left',
+      contain: true
+    });
+
+    // element argument can be a selector string
+    //   for an individual element
+    var flkty = new Flickity( '.main-carousel', {
+      // options
+    });
+  </script> -->
 
 
 </body>
